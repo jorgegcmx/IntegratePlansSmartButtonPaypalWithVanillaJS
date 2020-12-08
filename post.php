@@ -13,10 +13,7 @@ if(isset($_POST)){
 
 $data = json_decode(file_get_contents('php://input'), true);
 //var_dump($data[0]['Cliente']);
-
 $Nombre_plan_default='Plan Basico';
-
-
 $item=0;
 $contenido='
         <html lang="es">
@@ -90,15 +87,15 @@ $contenido .='
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'tucatalogowebartesanias@gmail.com';    // SMTP username
-        $mail->Password   = 'scorpions.,,';                         // SMTP password
+        $mail->Username   = '';    // SMTP username
+        $mail->Password   = '';                         // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
         $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
     
         //Recipients
-        $mail->setFrom('tucatalogowebartesanias@gmail.com', 'Comerciante Digital');
-        $mail->addAddress('jorgegcmx@gmail.com');                               // Add a recipient
-        $mail->addReplyTo('tucatalogowebartesanias@gmail.com', 'venta');
+        $mail->setFrom('', 'Comerciante Digital');
+        $mail->addAddress('');                               // Add a recipient
+        $mail->addReplyTo('', 'venta');
     
     
         // Content
