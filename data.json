@@ -1,0 +1,14 @@
+[
+    {
+        "precio": 1,
+        "id": 1,
+        "title": "Lorem ipsum, ",
+        "boton":"Plan Premium"
+    },
+    {
+        "precio": 2,
+        "id": 2,
+        "title": "Lorem ipsum, ",
+        "boton":"Plan Enterprise"
+    }
+]
